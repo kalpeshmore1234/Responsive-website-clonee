@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Lato&family=Poppins:wght@400;700;900&family=Roboto+Mono:ital@1&family=Roboto:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.website{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+header{
+  width: 100%;
+  height: 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  line-height: 4.1em;
+}
+
+header h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.green{
+  color: #99EDC3;
+}
+
+.red{
+  color: red
+}
+
+.yellow{
+  color: 	#FEDF00;
+}
+
+header p{
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+
+.block {
+  height: 15.5em;
+  width: 24.2em;
+  box-sizing: border-box;
+}
+
+.blocks {
+  display: grid;
+  row-gap: 1em;
+  column-gap: 1em;
+  box-sizing: border-box;
+}
+
+.outer-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .blocks { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .blocks { grid-template-columns: repeat(3, 1fr); }
+}
+
+
+
+.img{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* media queries for header p */
+@media (max-width:596px){
+  header p{
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width:520px){
+  header p{
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width:520px){
+  header p{
+    font-size: 1.2em;
+  }
+
+  .block{
+    width: 22em
+  }
+}
+
+@media (max-width:402px){
+  
+  header h1{
+    font-size: 2.8em;
+  }
+
+  header p{
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width:376px){
+  
+  header h1{
+    font-size: 2.6em;
+  }
+
+  header p{
+    font-size: 1em;
+  }
+
+  .block{
+     width: 20em;
+  }
+}
+
+@media (max-width:352px){
+  
+  header h1{
+    font-size: 2.4em;
+  }
+
+  header p{
+    font-size: 0.90em;
+  }
+}
+
+@media (max-width:338px){
+  
+  header h1{
+    font-size: 2.2em;
+  }
+
+  header p{
+    font-size: 0.87em;
+  }
+
+  .block{
+    width: 18em;
+ }
+}
+
+.description-container{
+  padding: 2em;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  column-gap:12em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.des{
+  height: 23em;
+  width: 30em;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  
+}
+
+
+
+.icon-cont{
+  height: 20%;
+  width: 100%;
+  
+}
+
+.title{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.des img{
+ height: 100%;
+ width: 10%;
+}
+
+
+.visit-cont{
+  
+  box-sizing: border-box;
+  min-height: 36em !important;
+ background-color:  #E5E4E2;
+}
+
+.visit-cont{
+  padding: 2em;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  column-gap:12em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.visit{
+  height: 23em;
+  width: 30em;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visit-inner{
+  height: 80%;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.visit-title{
+  height: 19%;
+  
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.subtitle{
+  height: 26%;
+ 
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 0.5em;
+}
+
+.para{
+  margin-top: 0.4em;
+}
+
+.map{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+footer{
+  margin-top: auto;
+  min-height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #99EDC3;
+}
+
+#footer-container{
+  background-color: #99EDC3;
+  font-weight: 505;
+}
+
+@media (max-width: 361px){
+  #footer-container{
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 338px){
+  #footer-container{
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img{
+  width: 30px;
+}
+
+footer{
+  margin-top:auto;
+  background-color: green;
+  height: 6em;
+}
